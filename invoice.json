@@ -1,0 +1,288 @@
+[
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x8da5cb5b"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "quoteSigner",
+    "outputs": [
+      {
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xf413bdb3"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isPaid",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0xfeef6640"
+  },
+  {
+    "inputs": [
+      {
+        "name": "valueSigner",
+        "type": "address"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor",
+    "signature": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "hash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": true,
+        "name": "tokenContract",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "name": "time",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "value",
+        "type": "uint256"
+      }
+    ],
+    "name": "PaymentAccepted",
+    "type": "event",
+    "signature": "0x826e7792f434a28ba302e6767da85b4b8e56b83a5e028687f30e848e32667f95"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "name": "gasPrice",
+        "type": "uint256"
+      },
+      {
+        "name": "expiration",
+        "type": "uint256"
+      },
+      {
+        "name": "payload",
+        "type": "bytes32"
+      },
+      {
+        "name": "hash",
+        "type": "bytes32"
+      },
+      {
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "name": "s",
+        "type": "bytes32"
+      },
+      {
+        "name": "tokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "isValidPayment",
+    "outputs": [
+      {
+        "name": "valid",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x98a89c1b"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "name": "gasPrice",
+        "type": "uint256"
+      },
+      {
+        "name": "expiration",
+        "type": "uint256"
+      },
+      {
+        "name": "payload",
+        "type": "bytes32"
+      },
+      {
+        "name": "hash",
+        "type": "bytes32"
+      },
+      {
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "name": "s",
+        "type": "bytes32"
+      },
+      {
+        "name": "tokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "validatePayment",
+    "outputs": [
+      {
+        "name": "valid",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function",
+    "signature": "0x0b089821"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "value",
+        "type": "uint256"
+      },
+      {
+        "name": "gasPrice",
+        "type": "uint256"
+      },
+      {
+        "name": "expiration",
+        "type": "uint256"
+      },
+      {
+        "name": "payload",
+        "type": "bytes32"
+      },
+      {
+        "name": "hash",
+        "type": "bytes32"
+      },
+      {
+        "name": "v",
+        "type": "uint8"
+      },
+      {
+        "name": "r",
+        "type": "bytes32"
+      },
+      {
+        "name": "s",
+        "type": "bytes32"
+      },
+      {
+        "name": "tokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "pay",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function",
+    "signature": "0xb6b4af05"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "tokenContract",
+        "type": "address"
+      }
+    ],
+    "name": "withdraw",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x51cff8d9"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newQuoteSigner",
+        "type": "address"
+      }
+    ],
+    "name": "setSigner",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x6c19e783"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "newAdmin",
+        "type": "address"
+      }
+    ],
+    "name": "setAdmin",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "signature": "0x704b6c02"
+  }
+]
